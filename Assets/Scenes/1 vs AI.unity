@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &86308241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1794,7 +1794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &324519962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5877,7 +5877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1214750883
 Transform:
   m_ObjectHideFlags: 0
@@ -6037,7 +6037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1231899028
 Transform:
   m_ObjectHideFlags: 0
@@ -6566,14 +6566,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1299772754}
   - component: {fileID: 1299772756}
-  - component: {fileID: 1299772757}
   m_Layer: 5
   m_Name: centercardsLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1299772754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6657,27 +6656,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1299772757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299772753}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0c5ee8cb6af64479ac5b28d18cd87b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cards:
-  - {fileID: 1412915816}
-  - {fileID: 1530277625}
-  - {fileID: 767692307}
-  moveDuration: 10
-  delayBetweenCards: 4
-  endPosition: {x: -1920, y: 0, z: 0}
-  endGameObject: {fileID: 825502917}
-  ease: 31
 --- !u!1 &1320644952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,6 +7244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1029551597}
+  cardsdistribute: {fileID: 1299772753}
   timer: 0
 --- !u!1 &1374787434
 GameObject:
@@ -7749,6 +7728,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2001209955}
         m_TargetAssemblyTypeName: PanelDesolver, Assembly-CSharp
         m_MethodName: buttonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2001209955}
+        m_TargetAssemblyTypeName: PanelDesolver, Assembly-CSharp
+        m_MethodName: oncardsDistribute
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10002,7 +9993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1851299313
 Transform:
   m_ObjectHideFlags: 0
@@ -10488,6 +10479,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1940981309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940981310}
+  m_Layer: 0
+  m_Name: Centercardscriptholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940981310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940981309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07793532, y: -0.5715042, z: 850.4455}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948589555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,6 +10856,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardAnimationGO: {fileID: 277422044}
   panel: {fileID: 1029551597}
+  cardsdistribute: {fileID: 1299772753}
+  topHalfLoader: {fileID: 1214750882}
+  bottomHalfLoader: {fileID: 1231899027}
+  p1Holder: {fileID: 86308240}
+  p2Holder: {fileID: 324519961}
 --- !u!1 &2002080345
 GameObject:
   m_ObjectHideFlags: 0
@@ -11691,3 +11718,4 @@ SceneRoots:
   - {fileID: 130083545}
   - {fileID: 1214750883}
   - {fileID: 1231899028}
+  - {fileID: 1940981310}

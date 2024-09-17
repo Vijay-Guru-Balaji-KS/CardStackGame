@@ -6,6 +6,8 @@ public class OnPanel : MonoBehaviour
 {
     public GameObject panel;
 
+    public GameObject cardsdistribute;
+
     public float timer = 0;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,16 @@ public class OnPanel : MonoBehaviour
         if(timer > 7f)
         {
             panel.SetActive(true);
-            Destroy(gameObject);
+            //startcardDistribution();
+            Destroy(gameObject); 
         }
     }
+
+    //public void startcardDistribution()
+    //{
+    //    if(!cardsdistribute.activeInHierarchy)
+    //    {
+    //        cardsdistribute.SetActive(true);
+    //    }
+    //}
 }

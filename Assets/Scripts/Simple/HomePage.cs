@@ -19,9 +19,9 @@ public class HomePage : MonoBehaviour
         
     }
 
-    public void buttonPressed()
+    public void buttonPressed(string loadSceneName)
     {
         Debug.Log("button Pressed");
-        SceneManager.LoadScene("Options Page");
+        SceneManager.LoadScene(loadSceneName);
     }
 }
