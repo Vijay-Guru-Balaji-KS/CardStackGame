@@ -15,11 +15,12 @@ public class CardMove : MonoBehaviour
     float count;
 
     public Ease ease = Ease.InOutBounce;
+
+
     void Start()
     {
         count = 0;
         StartCoroutine(MoveCards());
-        
     }
 
     private void Update()
@@ -54,4 +55,5 @@ public class CardMove : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenCards);
         }
     }
+
 }

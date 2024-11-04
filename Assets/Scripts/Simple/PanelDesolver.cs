@@ -9,10 +9,19 @@ public class PanelDesolver : MonoBehaviour
     public GameObject panel;
 
     public GameObject cardsdistribute;
+
+    [Header("Distribution references")]
     public GameObject topHalfLoader;
     public GameObject bottomHalfLoader;
     public GameObject p1Holder;
     public GameObject p2Holder;
+
+
+    [Header("Cards Shuffling references")]
+    public GameObject CardShufflerHolder;
+    public GameObject leftHalfHolder;
+    public GameObject rightHalfHolder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,12 +43,40 @@ public class PanelDesolver : MonoBehaviour
 
     public void oncardsDistribute()
     {
+        //panel.SetActive(false);
         cardsdistribute.SetActive(true);
         p1Holder.SetActive(true);
         p2Holder.SetActive(true);
         topHalfLoader.SetActive(true);
         bottomHalfLoader.SetActive(true);
+
     }
 
-    
+    /*public void leftAndRightDistributer()
+    {
+        StartCoroutine(StartShuffling());
+    }*/
+
+    public void shuffle()
+    {
+        CardShufflerHolder.SetActive(true);
+        leftHalfHolder.SetActive(true);
+        rightHalfHolder.SetActive(true);
+    }
+
+
+    /*IEnumerator StartShuffling()
+    {
+        CardShufflerHolder.SetActive(true);
+        leftHalfHolder.SetActive(true);
+        rightHalfHolder.SetActive(true);
+        yield return new WaitForSeconds(4);
+        Destroy(CardShufflerHolder);
+        yield return new WaitForSeconds(2);
+        oncardsDistribute();
+    }*/
+
+
+
+
 }

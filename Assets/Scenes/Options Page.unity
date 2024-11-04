@@ -932,15 +932,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Select a GameMode:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: affd34d922f495846a5970af1ebaf260, type: 2}
-  m_sharedMaterial: {fileID: 2391769615273677469, guid: affd34d922f495846a5970af1ebaf260, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c16cc883c919b05468d786d50ef7006e, type: 2}
+  m_sharedMaterial: {fileID: 4220907678606560297, guid: c16cc883c919b05468d786d50ef7006e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284415981
-  m_fontColor: {r: 0.92941177, g: 1, b: 0.36862746, a: 1}
+    rgba: 4294180608
+  m_fontColor: {r: 0, g: 1, b: 0.9515295, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 1
   m_fontColorGradient:
@@ -957,13 +957,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 103.9
+  m_fontSize: 110.4
   m_fontSizeBase: 35.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 102.1
-  m_fontSizeMax: 114
-  m_fontStyle: 0
+  m_fontSizeMin: 94.7
+  m_fontSizeMax: 112.51
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1123,6 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 494e5cc5acb57b643ac3e070da649f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testing: {fileID: 0}
 --- !u!1 &1761556414
 GameObject:
   m_ObjectHideFlags: 0
